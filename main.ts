@@ -79,18 +79,20 @@ statusbars.onZero(StatusBarKind.Health, function (status2) {
     game.over(false, effects.clouds)
 })
 function aqua_attack2 () {
-    if ((enemy_1.x == aqua.x || enemy_1.y == aqua.y) && (controller.A.isPressed() && CodeSequence == 3)) {
-        animation.runImageAnimation(
-        aqua,
-        assets.animation`aqua staff use right`,
-        200,
-        false
-        )
-        wave_attack = sprites.createProjectileFromSprite(assets.image`wave right`, aqua, 0, 0)
-        wave_attack.follow(enemy_1)
-        if (wave_attack.overlapsWith(enemy_1)) {
-            enemy_HP.value += -30
-            wave_attack.destroy(effects.bubbles, 500)
+    if (attack_weapon_aqua == 1) {
+        if ((enemy_1.x == aqua.x || enemy_1.y == aqua.y) && (controller.A.isPressed() && CodeSequence == 3)) {
+            animation.runImageAnimation(
+            aqua,
+            assets.animation`aqua staff use right`,
+            200,
+            false
+            )
+            wave_attack = sprites.createProjectileFromSprite(assets.image`wave right`, aqua, 0, 0)
+            wave_attack.follow(enemy_1)
+            if (wave_attack.overlapsWith(enemy_1)) {
+                enemy_HP.value += -30
+                wave_attack.destroy(effects.bubbles, 500)
+            }
         }
     }
 }
@@ -255,7 +257,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite2, otherS
 })
 statusbars.onZero(StatusBarKind.EnemyHealth, function (status) {
     enemy_1.destroy()
-    enemy_HP.destroy()
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`sigh right`, function (sprite, location) {
     tiles.createSpritesOnTiles(assets.tile`sigh right`, SpriteKind.text_block)
@@ -308,6 +309,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`triger`, function (sprite, lo
         tiles.placeOnTile(enemy_1, tiles.getTileLocation(56, 5))
         scene.cameraShake(4, 500)
         scene.cameraFollowSprite(enemy_1)
+        enemy_HP.attachToSprite(enemy_1)
         pause(1000)
         scene.cameraFollowSprite(darkness)
         music.spooky.play()
@@ -360,6 +362,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 let wave_attack: Sprite = null
 let exploshion_1: Sprite = null
 let CodeSequence = 0
+let attack_weapon_aqua = 0
 let enemy_HP: StatusBarSprite = null
 let statusbar: StatusBarSprite = null
 let chest_opening: Sprite = null
@@ -370,24 +373,7 @@ let darkness: Sprite = null
 darkness = sprites.create(assets.image`darkness0`, SpriteKind.Player)
 MIGAMII = sprites.create(assets.image`migamii`, SpriteKind.follower)
 aqua = sprites.create(assets.image`aqua`, SpriteKind.follower)
-enemy_1 = sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Enemy)
+enemy_1 = sprites.create(assets.image`guard enemy 1`, SpriteKind.Enemy)
 chest_opening = sprites.create(assets.image`chest closed`, SpriteKind.chest)
 enemy_1.setPosition(13, 123)
 tiles.setTilemap(tilemap`level1`)
@@ -403,9 +389,9 @@ statusbar.attachToSprite(darkness)
 statusbar.setBarBorder(1, 12)
 statusbar.setLabel("HP")
 statusbar.setColor(7, 2, 3)
-statusbar.attachToSprite(darkness)
-statusbar.setStatusBarFlag(StatusBarFlag.SmoothTransition, true)
 enemy_HP.attachToSprite(enemy_1)
+statusbar.setStatusBarFlag(StatusBarFlag.SmoothTransition, true)
+attack_weapon_aqua = 1
 tiles.createSpritesOnTiles(sprites.builtin.forestTiles0, SpriteKind.enviroment_1)
 tiles.coverAllTiles(assets.tile`transparency16`, sprites.castle.tileGrass1)
 tiles.coverAllTiles(sprites.builtin.forestTiles4, sprites.castle.tileGrass3)

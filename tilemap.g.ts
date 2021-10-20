@@ -31,15 +31,7 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile14 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile15 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile16 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile17 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile18 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile19 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile20 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -48,6 +40,16 @@ namespace myTiles {
     export const tile22 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile23 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile24 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile15 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile16 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile19 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile17 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -191,16 +193,8 @@ namespace myTiles {
             case "tile13":return tile13;
             case "common steel short sword":
             case "tile14":return tile14;
-            case "common steel sword breaker":
-            case "tile15":return tile15;
-            case "common steel long sword0":
-            case "tile16":return tile16;
-            case "common steel short sword0":
-            case "tile17":return tile17;
             case "common steel sword breaker0":
             case "tile18":return tile18;
-            case "legendary crucible blade":
-            case "tile19":return tile19;
             case "legendary Demon slayer sword":
             case "tile20":return tile20;
             case "legendary BFG 9000":
@@ -209,6 +203,16 @@ namespace myTiles {
             case "tile22":return tile22;
             case "common shotgun":
             case "tile23":return tile23;
+            case "basic short bow":
+            case "tile24":return tile24;
+            case "legendary long sword":
+            case "tile15":return tile15;
+            case "legendary":
+            case "tile16":return tile16;
+            case "ascended crucible blade":
+            case "tile19":return tile19;
+            case "common crossbow":
+            case "tile17":return tile17;
         }
         return null;
     })

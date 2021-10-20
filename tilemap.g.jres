@@ -88,35 +88,11 @@
         "tilemapTile": true,
         "displayName": "common steel short sword"
     },
-    "tile15": {
-        "data": "hwQQABAAAAAAAAAAAAAAXgAAAAAAALDsAAAAAAAAzAsAAAAA7sDLAAAAAADgywwAAAAA8OC+AAAAAADAzO4OAAAA8ADLDA4AAADAvMwAAAAA8ADLDAAAAADAvMwAAAAA8ADLDAAAAADPvMwAAAAAAM/LDAAAAAAAz8wAAAAAAAD/DwAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "common steel sword breaker"
-    },
-    "tile16": {
-        "data": "hwQQABAAAAAAAAAAAAAABQAAAAAAAMBVAAAAAAAAvAwAAAAA7rDMAAAAAADvxQsAAAAA8MxeAAAAAADPvOwOAAAA8MzL/A4AAADwvMwPAAAAAM/L/AAAAADwvPwPAAAAAM/LDwAAAADwvPwAAAAAAM/LDwAAAAAAz/wAAAAAAAD/DwAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "common steel long sword0"
-    },
-    "tile17": {
-        "data": "hwQQABAAAAAAAAAAAAAA7gAAAAAAAMDrAAAAAOAOywwAAAAAAO68AAAAAAAA7A4AAAAAAMDP7gAAAAAA/LzgAAAAAMDPCwAAAAAA/LwAAAAAAMDPCwAAAAAA/LwAAAAAAMDPCwAAAAAA/LwAAAAAAMDPCwAAAAAAsLsAAAAAAAAAAAAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "common steel short sword0"
-    },
     "tile18": {
         "data": "hwQQABAAAAB7BwAAAAAAXhcBAAAAALDsFwcAAAAAzAsAAAAA7sDLAAAAAADgywwAAAAA8OC+AAAAAADAzO4OAAAA8ADLDA4AAADAvMwAAAAA8ADLDAAAAADAvMwAAAAA8ADLDAAAAADPvMwAAAAAAM/LDAAAAAAAz8wAAAAAAAD/DwAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "common steel sword breaker0"
-    },
-    "tile19": {
-        "data": "hwQQABAAAABUBQAAAAAA7hUBAAAAAMDrFQUAAMAMywwAAAAAAMyyAAAAAAAgsgwAAAAAACIgzAAAAAAAAiLAAAAAACAiAgAAAAAAIgIAAAAgACAiAAAAACACIgIAAAAAICIiAAAAAAAgIgIAAAAAAAAiIgAAAAAAACAiAgAAAAAAAAAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "legendary crucible blade"
     },
     "tile20": {
         "data": "hwQQABAAAABUBQAAAAAAUBUBAAAADgAPFQUAAADr8AAAAAAAsMwOAAAAAADL/OwAAAAAsMzPvA4AAADL/MwLAAAAsMzPvAAAAADL/MwLAAAAsMzPvAAAAADL/MwLAAAAsMzPvAAAAADL/MwLAAAAAMvPvAAAAAAA+8wLAAAAAAC7uwAAAAAAAA==",
@@ -141,6 +117,36 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "common shotgun"
+    },
+    "tile24": {
+        "data": "hwQQABAAAACxCwAAAAAAABsBAAAAAAAAGwsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOARERER4QAA4AAgKwDgAADg7gAC4O4AAADuDgvuDgAAAODu6+4AAAAAAODrAAAAAAAAAAsAAAAAAADAzAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "basic short bow"
+    },
+    "tile15": {
+        "data": "hwQQABAAAABUBQAAAAAAURUBAABQAeARFQUAAFBauw4AAAAAABW1AAAAAACwJVEAAAAAAMtfhQEAAACw/LxQBQAAAMvPCwAAAACw/LwAAAAAAMvPCwAAAACw/LwAAAAAAMvPCwAAAACw/LwAAAAAAMDPCwAAAAAA8LwAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "legendary long sword"
+    },
+    "tile16": {
+        "data": "hwQQABAAAABUBQAAAAAA/xUBAAAAAPAPFQUAAAAA/wAAAAAAAPAPAAAAAAAA/wAAAAAAAPAPAAAAAAAA/wAAAAAAAPAPAAAAAAAA/wAAAAAAAP//AAAAAADw/w8AAAAAAPAvAAAAAAAA/8ICAAAgAPAvzCoAACoA8A8gLMzCDAD8AADCKiwAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "legendary"
+    },
+    "tile19": {
+        "data": "hwQQABAAAAAhAgAAAAAA7lIFAAAAAMDrUgIAAMAMywwAAAAAAMyyAAAAAAAgsgwAAAAAACIgzAAAAAAAAiLAAAAAACAiAgAAAAAAIgIAAAAgACAiAAAAACACIgIAAAAAICIiAAAAAAAgIgIAAAAAAAAiIgAAAAAAACAiAgAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "ascended crucible blade"
+    },
+    "tile17": {
+        "data": "hwQQABAAAABxBwAAzMwAABcBAAAMDAAAFwcAAMwAAAAAAAAAzAAAAAAAAADO4A4AAAAAAM7uDgAAAAAA7O4AAAAAAADsDgAAAAAAICEBAAAAAAAB4hAAAAAAEADrAAEAAAAOAOsA4AAAAOAO6+AOAAAAAODrDgAAAAAAwMwAAAAAAAAADAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "common crossbow"
     },
     "level3": {
         "id": "level3",

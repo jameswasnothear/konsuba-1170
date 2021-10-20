@@ -79,11 +79,6 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "darkness0"
     },
-    "image3": {
-        "data": "hwQQABAAAAAAAAAAAAAAAAAAAPAPAAAAAPD///zg7gAA/8vPy8/NAPD/vM+7/P8A8M/7vLG86///y/v8v7zs/7+7/Ey9zFsPv7v8TL3MWw//y/v8v7zs//DP+7yxvOv/8P+8z7v8/wAA/8vPy8/NAADw///84O4AAAAA8A8AAAAAAAAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "knight type 1"
-    },
     "image19": {
         "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAA/w8AAAAAAPAt+wAAAAAA8CIiDwD/////IiIP8L/Lsf8t+//wy8vPH/8f//DMzM0vIlIP8MzMzS8iUg/wy8vPHxIR//C/y7G/EbH/AP///////wAAAAAAALC9AAAAAAAA4O4AAAAAAAAAAAAAAAAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
@@ -119,11 +114,6 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "eris0"
     },
-    "B8mXRW1%G~Sa#Arlu=g_": {
-        "data": "hwQQABAAAAAAAAAAAAAAAAAAAPAPAAAAAPD///7gRAAA/+/v7k9NAPD/Lv/k/v8A8O/yv9EuQv//4vL+3yRC/y/i8k7dJFIPL+LyTt0kUg//4vL+3yRC//Dv8r/RLkL/8P8u/+T+/wAA/+7v7k9NAADw///+4EQAAAAA8A8AAAAAAAAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "guard enemy 1"
-    },
     "@#FqC_NHpg;c1wR": {
         "data": "hwQQABAAAAAAAAAAAAAAAAAAAPAPAAAAAPD///7gRAAA/+/v7k9NAPD/Lv/k/v8A8O/yv9EuQv//4vL+3yRC/y/i8k7dJFIPL+LyTt0kUg//4vL+3yRC//Dv8r/RLkL/8P8u/+T+/wAA/+7v7k9NAADw///+4EQAAAAA8A8AAAAAAAAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
@@ -153,6 +143,16 @@
         "data": "hwQQABAAAAAAu7u7y7y7C7Du7u677M6760Tk7rvs7rtLRETuu+zuC0tERO677O4LS0RE7rvs7gtLRETuu8vuC0tERO7NvO4LS0RE7s287gtLRETuu8vuC0tERO677O4LS0RE7rvs7gtLRETuu+zuC+tE5O677O67sO7u7rvszrsAu7u7y7y7Cw==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "chest closed"
+    },
+    "image3": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAPAPAAAAAPD///zg7gAA/8vPy8/NAPD/vM+7/P8A8M/7vLG86///y/v8v7zs/7+7/Ey9zFsPv7v8TL3MWw//y/v8v7zs//DP+7yxvOv/8P+8z7v8/wAA/8vPy8/NAADw///84O4AAAAA8A8AAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "knight type 1"
+    },
+    "B8mXRW1%G~Sa#Arlu=g_": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAPAPAAAAAPD///7gRAAA/+/v7k9NAPD/Lv/k/v8A8O/yv9EuQv//4vL+3yRC/y/i8k7dJFIPL+LyTt0kUg//4vL+3yRC//Dv8r/RLkL/8P8u/+T+/wAA/+7v7k9NAADw///+4EQAAAAA8A8AAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "guard enemy 1"
     },
     "anim1": {
         "namespace": "myAnimations",
