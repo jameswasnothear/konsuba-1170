@@ -25,12 +25,6 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile10 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile12 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile13 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile14 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile18 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile20 = image.ofBuffer(hex``);
@@ -50,6 +44,14 @@ namespace myTiles {
     export const tile19 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile17 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile12 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile14 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile13 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile25 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -158,6 +160,25 @@ namespace myTiles {
 ................................................................
 ................................................................
 `, [myTiles.transparency16,sprites.dungeon.purpleOuterWest1,sprites.dungeon.purpleInnerNorthEast,sprites.dungeon.purpleOuterNorth1,sprites.dungeon.purpleOuterSouth1,sprites.dungeon.purpleOuterSouthEast,sprites.dungeon.purpleInnerSouthEast,sprites.dungeon.purpleInnerSouthWest,sprites.dungeon.purpleInnerNorthWest,sprites.dungeon.purpleOuterNorthWest,sprites.dungeon.purpleOuterWest0,sprites.dungeon.darkGroundCenter,sprites.dungeon.purpleOuterNorth0,sprites.dungeon.collectibleInsignia,sprites.dungeon.chestClosed,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterWest2,sprites.dungeon.greenOuterSouth0,sprites.dungeon.doorClosedSouth,sprites.dungeon.doorOpenWest,sprites.dungeon.greenOuterEast1,sprites.dungeon.darkGroundWest,sprites.dungeon.darkGroundSouthWest0,sprites.dungeon.darkGroundSouth,sprites.dungeon.darkGroundSouthEast0,sprites.dungeon.darkGroundEast,sprites.dungeon.greenOuterWest1,sprites.dungeon.greenOuterEast2,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterSouth2,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenInnerNorthWest,sprites.dungeon.greenOuterSouth1,sprites.dungeon.purpleOuterNorthEast,sprites.dungeon.purpleOuterEast0,sprites.dungeon.purpleOuterSouthWest,sprites.dungeon.purpleOuterEast1,sprites.dungeon.purpleOuterNorth2,sprites.dungeon.purpleOuterSouth2,sprites.dungeon.purpleOuterWest2,sprites.dungeon.purpleOuterEast2,sprites.dungeon.darkGroundNorthEast0,sprites.dungeon.darkGroundNorthWest0,sprites.dungeon.darkGroundNorth], TileScale.Sixteen);
+            case "weapon menu":
+            case "level4":return tiles.createTilemap(hex`1000100002020202020202020d02020202020202020202020202020203010202020202020d02020203020202020202020202020203040808080808080808080808070202030b020c0c0c0c020c0c0c0c0209020202020c0c0c0c0c0c0c0c0c0c0c09020d020b0c0c0c0c0c0c0c0c0c0c0c090202020b0c020c0c0c0c020c0c0c0c090202020b0c0c0c0c0c0c020c0c020c020202020b0c0c0c0c0c0c020c0c0c0c090202020b020c0c0c0c0c0c0c0c0c0c090302020b0c0c0c020c0c0c0c0c0c0c090302010b0c0c020c0c0c0c0c0c0c0c090202020502020a0a020a0a0a0a0a0a060202020202020303020302020202020203030d02020202020202020202020202020d`, img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`, [myTiles.transparency16,sprites.castle.tileGrass2,sprites.castle.tileGrass1,sprites.castle.tileGrass3,sprites.castle.tilePath1,sprites.castle.tilePath7,sprites.castle.tilePath9,sprites.castle.tilePath3,sprites.castle.tilePath2,sprites.castle.tilePath6,sprites.castle.tilePath8,sprites.castle.tilePath4,sprites.castle.tilePath5,sprites.builtin.forestTiles0], TileScale.Sixteen);
         }
         return null;
     })
@@ -187,12 +208,6 @@ namespace myTiles {
             case "tile11":return tile11;
             case "myTile3":
             case "tile10":return tile10;
-            case "common steel long sword":
-            case "tile12":return tile12;
-            case "common steel brood sword":
-            case "tile13":return tile13;
-            case "common steel short sword":
-            case "tile14":return tile14;
             case "common steel sword breaker0":
             case "tile18":return tile18;
             case "legendary Demon slayer sword":
@@ -213,6 +228,14 @@ namespace myTiles {
             case "tile19":return tile19;
             case "common crossbow":
             case "tile17":return tile17;
+            case "common steel long sword":
+            case "tile12":return tile12;
+            case "common steel short sword":
+            case "tile14":return tile14;
+            case "common steel brood sword":
+            case "tile13":return tile13;
+            case "common two handed axe":
+            case "tile25":return tile25;
         }
         return null;
     })

@@ -19,6 +19,40 @@ sprites.onCreated(SpriteKind.Enemy, function (sprite) {
     enemy_HP.setStatusBarFlag(StatusBarFlag.SmoothTransition, true)
     enemy_HP.setBarBorder(1, 12)
 })
+function common_weapon_generation () {
+    if (common_item_generation == 1) {
+        weapon_menu = 1
+        game.setDialogFrame(assets.image`Igen c 1`)
+    } else if (common_item_generation == 2) {
+        weapon_menu = 2
+        game.setDialogFrame(assets.image`Igen c 2`)
+    } else if (common_item_generation == 3) {
+        weapon_menu = 3
+        game.setDialogFrame(assets.image`Igen c 3`)
+    } else if (common_item_generation == 4) {
+        weapon_menu = 4
+        game.setDialogFrame(assets.image`Igen c 4`)
+    } else if (common_item_generation == 5) {
+        weapon_menu = 5
+        game.setDialogFrame(assets.image`Igen c 5`)
+    } else if (common_item_generation == 6) {
+        weapon_menu = 6
+        game.setDialogFrame(assets.image`Igen c 6`)
+    } else if (common_item_generation == 7) {
+        weapon_menu = 7
+        game.setDialogFrame(assets.image`Igen c 7`)
+    } else if (common_item_generation == 8) {
+        weapon_menu = 8
+        game.setDialogFrame(assets.image`Igen c 8`)
+    } else if (common_item_generation == 9) {
+        weapon_menu = 9
+        game.setDialogFrame(assets.image`Igen c 9`)
+    } else if (common_item_generation == 10) {
+        weapon_menu = 10
+        game.setDialogFrame(assets.image`Igen c 10`)
+    }
+    common_item_generation = 0
+}
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     MIGAMII,
@@ -102,15 +136,29 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     }
     if (CodeSequence == 3 && controller.A.isPressed()) {
         aqua_attack2()
-    } else {
-        aqua_attack2()
-        migamii_attack1()
     }
     if (tiles.tileIs(tiles.getTileLocation(55, 14), sprites.dungeon.chestClosed) && darkness.overlapsWith(chest_opening)) {
-        let item: Sprite = null
-        sprites.setDataImage(item, "common steel sword", myTiles.tile12)
+        pause(100)
         game.setDialogFrame(assets.image`chest frame 1`)
         story.showPlayerChoices("take all items", "leave")
+        if (controller.A.isPressed()) {
+            story.spriteSayText(darkness, "take all items")
+        } else if (controller.B.isPressed()) {
+            story.spriteSayText(darkness, "leave")
+        }
+        if (story.checkLastAnswer("take all items")) {
+            common_item_generation += randint(1, 10)
+            common_weapon_generation()
+            tiles.setTileAt(tiles.getTileLocation(55, 14), sprites.dungeon.chestOpen)
+            tiles.placeOnTile(darkness, tiles.getTileLocation(55, 13))
+            tiles.placeOnTile(aqua, tiles.getTileLocation(55, 13))
+            tiles.placeOnTile(MIGAMII, tiles.getTileLocation(55, 13))
+            tiles.setWallAt(tiles.getTileLocation(55, 14), true)
+        } else if (story.checkLastAnswer("leave")) {
+            tiles.placeOnTile(darkness, tiles.getTileLocation(55, 13))
+            tiles.placeOnTile(aqua, tiles.getTileLocation(55, 13))
+            tiles.placeOnTile(MIGAMII, tiles.getTileLocation(55, 13))
+        }
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`sigh left1`, function (sprite, location) {
@@ -361,6 +409,8 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 let wave_attack: Sprite = null
 let exploshion_1: Sprite = null
+let weapon_menu = 0
+let common_item_generation = 0
 let CodeSequence = 0
 let attack_weapon_aqua = 0
 let enemy_HP: StatusBarSprite = null
@@ -392,6 +442,7 @@ statusbar.setColor(7, 2, 3)
 enemy_HP.attachToSprite(enemy_1)
 statusbar.setStatusBarFlag(StatusBarFlag.SmoothTransition, true)
 attack_weapon_aqua = 1
+CodeSequence = 1
 tiles.createSpritesOnTiles(sprites.builtin.forestTiles0, SpriteKind.enviroment_1)
 tiles.coverAllTiles(assets.tile`transparency16`, sprites.castle.tileGrass1)
 tiles.coverAllTiles(sprites.builtin.forestTiles4, sprites.castle.tileGrass3)

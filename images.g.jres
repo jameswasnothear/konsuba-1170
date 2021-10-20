@@ -154,6 +154,56 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "guard enemy 1"
     },
+    "image30": {
+        "data": "hwQQABAAAABxBwAAAAAABRcBAAAAAMBVFwcAAAAAvAwAAAAA7rDMAAAAAADvxQsAAAAA8MxeAAAAAADPvOwOAAAA8MzL/A4AAADwvMwPAAAAAM/L/AAAAADwvPwPAAAAAM/LDwAAAADwvPwAAAAAAM/LDwAAAAAAz/wAAAAAAAD/DwAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Igen c 1"
+    },
+    "image31": {
+        "data": "hwQQABAAAAB7BwAAAAAAXhcBAAAAALDsFwcAAAAAzAsAAAAA7sDLAAAAAADgywwAAAAA8OC+AAAAAADAzO4OAAAA8ADLDA4AAADAvMwAAAAA8ADLDAAAAADAvMwAAAAA8ADLDAAAAADPvMwAAAAAAM/LDAAAAAAAz8wAAAAAAAD/DwAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Igen c 2"
+    },
+    "image33": {
+        "data": "hwQQABAAAABxBwAAAAAAXBcBAAAAAMDLFwcAAOAOywwAAAAA8O68AAAAAADP7A4AAAAA8MzL7gAAAADPvMzvAAAA8MzL/AAAAADPvMwPAAAA8MzL/AAAAADPvMwPAAAA8MzL/AAAAADPvMwPAAAAAM/L/AAAAAAAz8wPAAAAAAD//wAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Igen c 4"
+    },
+    "image32": {
+        "data": "hwQQABAAAABxBwAAsLsAABcBAAC7CwAAFwcAALAAAAAAAAAAsAAAAAAAAAAL7g4AAAAAAOvuAAAAAAAA+wsAAAAAAAD7+wAAAAAAAPvuAAAAAAAA++4AAAAAAAD77gAAAAAAAPvuAAAAAAAA+/sAAAAAAAD7/AAAAAAAAMvPAAAAAAAA/AwAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Igen c 3"
+    },
+    "image34": {
+        "data": "hwQQABAAAABxBwAAAAAA7hcBAAAAAMDrFwcAAOAOywwAAAAAAO68AAAAAAAA7A4AAAAAAMDP7gAAAAAA/LzgAAAAAMDPCwAAAAAA/LwAAAAAAMDPCwAAAAAA/LwAAAAAAMDPCwAAAAAA/LwAAAAAAMDPCwAAAAAAsLsAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Igen c 5"
+    },
+    "image35": {
+        "data": "hwQQABAAAABxBwAAzMwAABcBAAAMDAAAFwcAAMwAAAAAAAAAzAAAAAAAAADO4A4AAAAAAM7uDgAAAAAA7O4AAAAAAADsDgAAAAAAICEBAAAAAAAB4hAAAAAAEADrAAEAAAAOAOsA4AAAAOAO6+AOAAAAAODrDgAAAAAAwMwAAAAAAAAADAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Igen c 6"
+    },
+    "image36": {
+        "data": "hwQQABAAAABxBwAAAAAAABcBAAAAAAAAFwcAAAAAAA4AAAAAAADgDgAAAMDMAO4AAAAAvMvgDgAAAMDLvO4AAAAAwMvrywwAAADAvL68DAAAAADuy7wMAAAAsO68ywwAAACwC8zMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Igen c 7"
+    },
+    "image37": {
+        "data": "hwQQABAAAABxBwAAAAAAABcBAAAAAAAAFwcAAAAAAAAAAAAAAAAAAADw////DwAAAAC/u8z7AAAAAPC7y7v/AAAAv7vLu7sPAPDPzMzMzPwAAL+7y7u7DwAA8LvLu/8AAAC/u8z7AAAA8P///w8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Igen c 8"
+    },
+    "image38": {
+        "data": "hwQQABAAAABxBwAAAAAAwBcBAAAAAADhFwcAAAAA4AEAAAAAAADhAAAAAAAAEAEAAAAAAADhAAAAAAAAEAEAAAAAAADuAAAAAAAAEA4AAAAAAAARAAAAAAAA4AEAAAAAAMDsAAAAAAAA+/wLAAAAALC/sL8AAAAA8AsAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Igen c 9"
+    },
+    "image39": {
+        "data": "hwQQABAAAABxBwAAAAAAABcBAADwAP8AFwcAAPDwAAAAAAAA8A8AAADwAAAAAAAAAP8PAAD/DwAA8AAA8ADwAAAAAADwAPAAALvMAAD/DwCwVdUPAAAAAFs90/0A/w8AW1MV/fAA8ABbUxX98ADwAFsd0f0A/w8AsFXdDwAAAAAAu8wAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Igen c 10"
+    },
     "anim1": {
         "namespace": "myAnimations",
         "id": "anim1",
