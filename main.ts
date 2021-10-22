@@ -19,6 +19,10 @@ sprites.onCreated(SpriteKind.Enemy, function (sprite) {
     enemy_HP.setStatusBarFlag(StatusBarFlag.SmoothTransition, true)
     enemy_HP.setBarBorder(1, 12)
 })
+function weapon_menu_tielmap () {
+    tiles.loadMap(tiles.createMap(tilemap`weapon menu`))
+    scene.centerCameraAt(80, 80)
+}
 function common_weapon_generation () {
     if (common_item_generation == 1) {
         weapon_menu = 1
@@ -138,15 +142,17 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         aqua_attack2()
     }
     if (tiles.tileIs(tiles.getTileLocation(55, 14), sprites.dungeon.chestClosed) && darkness.overlapsWith(chest_opening)) {
-        pause(100)
-        game.setDialogFrame(assets.image`chest frame 1`)
         story.showPlayerChoices("take all items", "leave")
         if (controller.A.isPressed()) {
             story.spriteSayText(darkness, "take all items")
+            game.setDialogFrame(assets.image`chest frame 1`)
+            pause(100)
+            game.showLongText("you took all items", DialogLayout.Bottom)
         } else if (controller.B.isPressed()) {
             story.spriteSayText(darkness, "leave")
         }
         if (story.checkLastAnswer("take all items")) {
+            pause(2000)
             common_item_generation += randint(1, 10)
             common_weapon_generation()
             tiles.setTileAt(tiles.getTileLocation(55, 14), sprites.dungeon.chestOpen)
@@ -163,7 +169,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`sigh left1`, function (sprite, location) {
     tiles.createSpritesOnTiles(assets.tile`sigh left1`, SpriteKind.text_block)
-    game.splash("placeholder")
+    game.splash("black forest")
     pause(100)
     story.clearAllText()
     tiles.placeOnTile(darkness, tiles.getTileLocation(135, 9))
@@ -446,6 +452,7 @@ CodeSequence = 1
 tiles.createSpritesOnTiles(sprites.builtin.forestTiles0, SpriteKind.enviroment_1)
 tiles.coverAllTiles(assets.tile`transparency16`, sprites.castle.tileGrass1)
 tiles.coverAllTiles(sprites.builtin.forestTiles4, sprites.castle.tileGrass3)
+tiles.createSpritesOnTiles(assets.tile`myTile0`, SpriteKind.river)
 game.onUpdateInterval(2000, function () {
     statusbar.value += 2
 })
